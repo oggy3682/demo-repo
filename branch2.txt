@@ -1,1 +1,2 @@
 This is branch2 file
+we have added a new line to the file branch2.txt
