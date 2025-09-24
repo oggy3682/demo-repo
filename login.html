@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minimal Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #f6f7fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Inter', Arial, sans-serif;
+        }
+        .login-container {
+            background: #fff;
+            padding: 2rem 1.5rem;
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(80, 80, 120, 0.10);
+            width: 340px;
+            max-width: 95vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.2rem;
+            backdrop-filter: blur(4px);
+        }
+        .login-container h2 {
+            color: #222e3a;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+        .input-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+        }
+        .input-group input {
+            background: #f2f3f7;
+            border-radius: 10px;
+            border: 1px solid #e3e6ee;
+            padding: 0.85rem;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.2s;
+        }
+        .input-group input:focus {
+            border-color: #4F8EF7;
+        }
+        .login-container button {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0.85rem;
+            background: #222e3a;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(34,46,58,0.07);
+            transition: background 0.2s, transform 0.1s;
+            margin-top: 0.5rem;
+        }
+        .login-container button:hover {
+            background: #4F8EF7;
+            transform: translateY(-1px) scale(1.01);
+        }
+        .login-container .links {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+        .login-container .links a {
+            color: #4F8EF7;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .login-container .links a:hover {
+            color: #222e3a;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Sign In</h2>
+        <form>
+            <div class="input-group">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="links">
+            <a href="#">Forgot password?</a>
+            <a href="#">Sign up</a>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    body {
+        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    }
+    .login-container {
+        background: rgba(255,255,255,0.85);
+        box-shadow: 0 8px 32px rgba(60, 30, 90, 0.18);
+        border: 1px solid #e0c3fc;
+    }
+    .login-container h2 {
+        color: #6a4cff;
+        letter-spacing: 0.04em;
+    }
+    .input-group input {
+        background: #f7f0ff;
+        border: 1px solid #d1b3ff;
+    }
+    .input-group input:focus {
+        border-color: #6a4cff;
+        box-shadow: 0 0 0 2px #e0c3fc55;
+    }
+    .login-container button {
+        background: linear-gradient(90deg, #6a4cff 0%, #8ec5fc 100%);
+        color: #fff;
+        box-shadow: 0 2px 12px rgba(106,76,255,0.10);
+    }
+    .login-container button:hover {
+        background: linear-gradient(90deg, #8ec5fc 0%, #6a4cff 100%);
+    }
+    .login-container .links a {
+        color: #6a4cff;
+    }
+    .login-container .links a:hover {
+        color: #8ec5fc;
+    }
+</style>
